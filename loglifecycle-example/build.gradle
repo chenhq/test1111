@@ -5,16 +5,11 @@ buildscript {
     // NOTE: This is only needed when developing the plugin!
     mavenLocal()
 
-    flatDir {
-        dirs 'loglifecycle-plugin/build/libs'
-    }
   }
 
   dependencies {
     classpath 'com.android.tools.build:gradle:0.12.2'
-    //classpath 'com.github.stephanenicolas.loglifecycle:loglifecycle-plugin:1.0.4-SNAPSHOT'
-    classpath 'loglifecycle-plugin/build/libs/loglifecycle-plugin-1.0.4-SNAPSHOT.jar'
-    //compile files('loglifecycle-plugin/build/libs/loglifecycle-plugin-1.0.4-SNAPSHOT.jar')
+    classpath 'com.github.stephanenicolas.loglifecycle:loglifecycle-plugin:1.0.4-SNAPSHOT'
   }
 }
 
